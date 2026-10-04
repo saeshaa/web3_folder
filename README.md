@@ -3,7 +3,7 @@
 **Name:** Saida Khairova
 **Group:** IT 2502
 
-## Project structure
+## Project structure and link
 
 ```
 project/
@@ -11,7 +11,7 @@ project/
 ├── styles.css    # Custom CSS and media queries
 └── README.md     # This report
 ```
-
+Link : https://saeshaa.github.io/web3_folder/
 ## Breakpoints
 
 | Device  | Width           | Used in            |
