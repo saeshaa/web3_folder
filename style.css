@@ -1,0 +1,74 @@
+
+  .task-label { background: #e9ecef; padding: .5rem 1rem; font-weight: bold; border-top: 3px solid #212529; }
+
+  /* TASK 0: Responsive Typography  */
+  #task0 { max-width: 70ch; margin: 0 auto; padding: 1rem; line-height: 1.6; }
+  #task0 h1 { font-size: 1.6rem; }
+  #task0 h2 { font-size: 1.25rem; }
+  #task0 p  { font-size: 0.95rem; }
+
+  @media (min-width: 768px) {
+    #task0 h1 { font-size: 2.2rem; }
+    #task0 h2 { font-size: 1.6rem; }
+    #task0 p  { font-size: 1.1rem; }
+  }
+  @media (min-width: 1024px) {
+    #task0 h1 { font-size: 3rem; }
+    #task0 h2 { font-size: 2rem; }
+    #task0 p  { font-size: 1.25rem; }
+  }
+
+  /* TASK 1: Three Boxes (CSS only) */
+  #task1 { padding: 1rem; }
+  #task1 .container-boxes { display: flex; flex-wrap: wrap; gap: 1rem; }
+  #task1 .box {
+    padding: 3rem 1rem; text-align: center; color: #fff;
+    font-size: 1.25rem; border-radius: 6px;
+    flex: 1 1 100%;                         /* mobile: stacked */
+  }
+  #task1 .box:nth-child(1) { background: #2a6f97; }
+  #task1 .box:nth-child(2) { background: #2c7a5b; }
+  #task1 .box:nth-child(3) { background: #b5523b; }
+
+  @media (min-width: 768px)  { #task1 .box { flex: 1 1 calc(50% - 0.5rem); } }      /* tablet: 2 per row */
+  @media (min-width: 1024px) { #task1 .box { flex: 1 1 calc(33.333% - 0.7rem); } }  /* desktop: 3 per row */
+
+  /* TASK 2: Bootstrap Columns  */
+  #task2 .col-box { padding: 3rem 1rem; text-align: center; color: #fff; border-radius: 6px; }
+
+  /* TASK 4: Portfolio  */
+  #task4 { background: #f4f6f8; }
+  #task4 .project-img { height: 140px; background: linear-gradient(135deg, #2a6f97, #61a5c2); }
+  #task4 .sidebar { background: #fff; border-radius: 8px; padding: 1.25rem; margin-top: 1.5rem; }
+  #task4 .avatar {
+    width: 96px; height: 96px; border-radius: 50%; background: #2a6f97; color: #fff;
+    display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1rem;
+  }
+  #task4 footer { background: #212529; color: #adb5bd; }
+
+  /* Mobile (default) */
+  #task4 .page-title { font-size: 1.5rem; }
+  #task4 .card-title { font-size: 1.05rem; }
+  #task4 .card-text, #task4 .sidebar p { font-size: 0.9rem; }
+  #task4 main { padding-top: 1rem; padding-bottom: 1rem; }
+  #task4 .desktop-only, #task4 .tablet-up { display: none; }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    #task4 .page-title { font-size: 2rem; }
+    #task4 .card-title { font-size: 1.2rem; }
+    #task4 .card-text, #task4 .sidebar p { font-size: 1rem; }
+    #task4 main { padding-top: 2rem; padding-bottom: 2rem; }
+    #task4 .tablet-up { display: block; }
+    #task4 .project-img { height: 160px; }
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    #task4 .page-title { font-size: 2.6rem; }
+    #task4 .card-title { font-size: 1.3rem; }
+    #task4 main { padding-top: 3rem; padding-bottom: 3rem; }
+    #task4 .sidebar { margin-top: 0; position: sticky; top: 1rem; }
+    #task4 .desktop-only { display: block; }
+    #task4 .project-img { height: 180px; }
+  }
